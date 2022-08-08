@@ -14,7 +14,7 @@ public class UserController {
     @PostMapping
     ResponseEntity<UserResponse> create(@RequestBody CreateUserRequest userRequest) throws InvalidEmailException {
         userService.create(userRequest);
-        return ResponseEntity.accepted().build();ˀ
+        return ResponseEntity.accepted().build();
     }
 
     @PatchMapping("/{id}")
